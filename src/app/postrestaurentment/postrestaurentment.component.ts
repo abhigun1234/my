@@ -17,6 +17,9 @@ export class PostrestaurentmentComponent implements OnInit {
      this.restro.postResaturentMenu(data).subscribe(res=>{
 
       console.log(res)
+     },error=>{
+
+      alert(error)
      })
 
   }
