@@ -13,7 +13,7 @@ export class PostrestaurentmentComponent implements OnInit {
   }
 
  public postdata(data :any)
-  {  alert("hi")
+  {  alert("post")
      this.restro.postResaturentMenu(data).subscribe(res=>{
 
       console.log(res)
