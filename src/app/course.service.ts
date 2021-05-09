@@ -4,27 +4,28 @@ import {HttpHeaders} from '@angular/common/http'
 @Injectable({
   providedIn: 'root'
 })
-export class RestroService {
+export class CourseService {
   headers: HttpHeaders;
-  constructor(private httpclient :HttpClient) { 
-
+  constructor(private httpclient :HttpClient) {
     this.headers = new HttpHeaders();
     this.headers  = this.headers .set('Content-Type', 'application/json; charset=utf-8');
-  
-  }
+    
+   }
+  public addUser()
 
-
-  /*
-   posting restaurent menu to backend api  
-  */
-
-  public postResaturentMenu(data:any)
-  {  alert('postResaturentMenu')
+  { 
+     alert('postResaturentMenu')
+     let data={
+      "userId": 1000,
+      "id": 1,
+      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+      "body": "Welcome"
+    }
     const body = JSON.stringify(data);
     let options = {
       headers: this.headers
      }; 
-   const url='http://192.168.43.1:8080/getMenuDetails/addmenu/'
+   const url='https://jsonplaceholder.typicode.com/posts/'
    return this.httpclient.post(url,body,options)
    
   }

@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms'
 import { AppComponent } from './app.component';
 import { PostrestaurentmentComponent } from './postrestaurentment/postrestaurentment.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { RegistrationComponent } from './registration/registration.component';
+import { CommentComponent } from './comment/comment.component'
 @NgModule({
   declarations: [
     AppComponent,
-    PostrestaurentmentComponent
+    PostrestaurentmentComponent,
+    RegistrationComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,
