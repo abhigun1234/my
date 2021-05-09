@@ -6,6 +6,7 @@ import { PostrestaurentmentComponent } from './postrestaurentment/postrestaurent
 import {HttpClientModule} from '@angular/common/http';
 import { RegistrationComponent } from './registration/registration.component';
 import { CommentComponent } from './comment/comment.component'
+import {ReactiveFormsModule} from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { CommentComponent } from './comment/comment.component'
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

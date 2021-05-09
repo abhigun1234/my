@@ -13,13 +13,13 @@ export class CommentService {
     
    }
 
-  addComment(){
-    let data={
-      "userId": 1000,
-      "id": 1,
-      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-      "body": "Welcome"
-    }
+  addComment(data:any){
+    // let data={
+    //   "userId": 1000,
+    //   "id": 1,
+    //   "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    //   "body": "Welcome"
+    // }
     const body = JSON.stringify(data);
     let options = {
       headers: this.headers
